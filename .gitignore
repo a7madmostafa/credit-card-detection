@@ -1,0 +1,36 @@
+# ---------- Data ----------
+# Dataset is ~150 MB (over GitHub's 100 MB limit): download from Kaggle, see README.
+# Ignore everything in data/ but keep the folder via .gitkeep
+data/*
+!data/.gitkeep
+*.csv
+*.parquet
+*.zip
+
+# ---------- Trained models ----------
+# Regenerate with `python src/train.py`
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.env
+
+# ---------- Jupyter ----------
+.ipynb_checkpoints/
+
+# ---------- IDE ----------
+.vscode/
+.idea/
+
+# ---------- OS / Google Drive ----------
+desktop.ini
+.DS_Store
+Thumbs.db
+*.tmp
